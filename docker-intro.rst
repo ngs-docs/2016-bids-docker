@@ -266,16 +266,17 @@ First, put the command in a shell script::
 and then run the shell script inside of Docker::
 
    docker run -v /home/ubuntu/data:/mydata \
-          -it megahit /mydata/do-assemble.sh
+          -it megahit_ctr /mydata/do-assemble.sh
 
 and voila!
 
-One thing to note here is that we've placed the do-assemble.sh script on
+One thing to note here is that we've placed the ``do-assemble.sh`` script on
 the EC2 machine, rather than in the Docker container.  You can do it either
 way, but in this case it was more convenient to do it this way because
 we'd already created the container and I didn't want to have to create a
-new one.  The only change needed is to put the script in /home on the
-docker image, instead of /data.
+new one.  The only change needed is to put the script in ``/home`` on the
+docker image (because that's the local disk), instead of ``/mydata`` (which
+is the mounted volume)..
 
 Building an image with a Dockerfile
 -----------------------------------
