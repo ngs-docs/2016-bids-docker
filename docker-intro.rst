@@ -2,7 +2,7 @@
 A hands-on introduction to Docker
 =================================
 
-:author: C. Titus Brown, titus@idyll.org
+:author: \C. Titus Brown, titus@idyll.org
 :license: CC0
 :date: Nov 7. 2015
 
@@ -104,7 +104,7 @@ Let's build a Docker image for the MEGAHIT short-read assembler.
 (This is not the right way to do it in general, and we'll do it the
 Right Way with a Dockerfile, below.)  This is all based on the
 `Assembling E. coli tutorial
-<http://angus.readthedocs.org/en/2015/assembling-ecoli.html>`--.
+<http://angus.readthedocs.org/en/2015/assembling-ecoli.html>`__.
 
 Start up a new container::
 
