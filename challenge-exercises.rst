@@ -4,6 +4,8 @@ Some "challenge exercises"
 Here are some ideas for projects that are a little less scripted than
 `the introduction to Docker on Linux <./docker-intro.rst>`__.
 
+0. There's a set of `challenge exercises at the bottom of the introduction <./docker-intro.rst#challenge-exercises>`__.
+
 1. Install Docker on your local computer (Mac, Windows, or Linux) and
    run through the introduction yourself.
 
