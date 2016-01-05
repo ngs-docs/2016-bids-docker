@@ -1,6 +1,9 @@
 # Docker workshop agenda
 
-BIDS, UC Berkeley, January 7-8th; 9:15am-4:30pm.
+Please see [the README for this repository](README.md) for time and location
+information.
+
+-----
 
 This hands-on workshop will introduce attendees to the basics of
 Docker, a containerization technology that can be used for running,
