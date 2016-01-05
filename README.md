@@ -21,8 +21,9 @@ will provide a friendly and welcoming environment for trying it out.
 People new to Docker are welcome to attend! We do suggest that
 attendees have some familiarity with the UNIX command line.
 
-See [BIDS workshop page](http://bids.berkeley.edu/events/bids-docker-workshop)
-for venue information.
+See [the BIDS workshop
+page](http://bids.berkeley.edu/events/bids-docker-workshop) for venue
+information.
 
 ### Software Installation etc.
 
