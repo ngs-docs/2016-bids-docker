@@ -52,6 +52,6 @@ is:
     Berkeley Institute for Data Science (BIDS)
     190 Doe Library
     Berkeley, CA 94720
-   510-664-4506
-   aferguson@berkeley.edu
-   http://bids.berkeley.edu
+    510-664-4506
+    aferguson@berkeley.edu
+    http://bids.berkeley.edu
