@@ -32,12 +32,13 @@ with Docker" on [www.docker.com/](https://www.docker.com/) and following
 the instructions to install Docker.  If you get to the end of the
 first step (`docker run hello-world` that is all you need!)
 
-As a backup, we will be using Amazon Web Services; please sign up for
-an account at http://aws.amazon.com/.  After creating an account, you
-should sign in to the Console and click on the "EC2" compute service
-(upper left); it may ask you to activate your account via a phone
-number.  Note that Amazon Web Services will also be useful for people
-interested in exploring docker-machine!
+As a backup for installation problems, we will be using Amazon Web
+Services; please sign up for an account at http://aws.amazon.com/.
+After creating an account, you should sign in to the Console and click
+on the "EC2" compute service (upper left); it may ask you to activate
+your account via a phone number.  Note that an Amazon Web Services
+account will also be useful for people interested in exploring
+docker-machine!
 
 ### Code of Conduct
 
@@ -46,11 +47,11 @@ Attendees at this workshop are expected to abide by the
 The local contact person for any concerns you may have during this workshop
 is:
 
-   Ali N. Ferguson
-   Communications Manager
-   Berkeley Institute for Data Science (BIDS)
-   190 Doe Library
-   Berkeley, CA 94720
+    Ali N. Ferguson
+    Communications Manager
+    Berkeley Institute for Data Science (BIDS)
+    190 Doe Library
+    Berkeley, CA 94720
    510-664-4506
    aferguson@berkeley.edu
    http://bids.berkeley.edu
