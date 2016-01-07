@@ -309,7 +309,7 @@ Things to discuss:
 
 * diagram out what we're doing!
 * docker-machine manages your docker host; docker manages your
-   containers/images ON that host.
+  containers/images ON that host.
 * talk about AWS host sizes/instance types: https://aws.amazon.com/ec2/instance-types/
 * explain docker client, docker host, docker container relationship
 * also include -p, -v discussion.
