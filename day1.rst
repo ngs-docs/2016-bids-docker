@@ -62,13 +62,20 @@ and see something like this? ::
    Hello from Docker.
    ...
 
-If that works, you might try::
+If that works, you should do::
 
    docker pull ubuntu:14.04
+
+If that doesn't work, you `might need
+<https://stackoverflow.com/questions/28301151/docker-pull-error>`__ to
+run this to reset your local docker install::
+
+   docker-machine restart default && eval "$(docker-machine env default)"
+
+You can also download these bigger images, that we will be using later::
+
    docker pull jupyter/notebook
    docker pull rocker/hadleyverse
-
-to get some of the stuff downloaded a bit early.
 
 Getting started
 ---------------
