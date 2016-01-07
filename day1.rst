@@ -253,7 +253,7 @@ You can now run::
 More::
 
 * the "local context" (files in the cwd) are copied over to the host machine
-* commands to cover: FROM, COPY, ENTRYPOINT, RUN, ENV, WORKDIR
+* commands to cover: FROM, COPY, RUN, ENV, WORKDIR, CMD.
 * A real Dockerfile is at: https://github.com/ctb/2015-docker-building/tree/master/khmer
 * note, each RUN command creates a new layer...
 * are people interested in docker hub?
@@ -334,6 +334,8 @@ to see it at the `AWS EC2 console
 Let's talk more about why you would want to do *this* :).
 
 Also, diagrams!
+
+Also, note Dockerfiles build on the *remote* machine!
 
 -----
 
