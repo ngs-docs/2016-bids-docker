@@ -1,3 +1,3 @@
 #! /bin/bash
 
-echo goodbye cruel world
+echo hello there
