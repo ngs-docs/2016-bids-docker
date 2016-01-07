@@ -282,7 +282,7 @@ Find your AWS credentials and your VPC ID.
   (that's mine and won't work for you ;)
 
 Then, set your AWS_KEY and AWS_SECRET and VPC_ID; on Linux/Mac, fill in
-the values and execute:
+the values and execute::
 
   export AWS_KEY=
   export AWS_SECRET=
