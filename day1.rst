@@ -7,6 +7,10 @@ Contact: titus@idyll.org
 
 License: CC0
 
+We'll put ephemera from today in this etherpad:
+
+   https://etherpad.wikimedia.org/p/bids-docker
+
 Introductory stuff
 ------------------
 
@@ -183,8 +187,8 @@ Bigger questions:
 * how do I figure out what all the arguments do?
 * why is this useful, anyway?
 
-Docker volumes
---------------
+Docker data volumes
+-------------------
 
 If you run::
 
@@ -203,6 +207,10 @@ and you can copy to and from it by name::
 You can remove it with::
 
    docker rm my_data_vol
+
+Things to discuss:
+
+* discuss where data volumes (and images, etc.) are stored
    
 Building a new Docker image
 ---------------------------
@@ -223,7 +231,8 @@ You can now run::
   docker run myhello
 
 More::
-  
+
+* the "local context" (files in the cwd) are copied over to the host machine
 * commands to cover: FROM, COPY, ENTRYPOINT, RUN, ENV, WORKDIR
 * A real Dockerfile is at: https://github.com/ctb/2015-docker-building/tree/master/khmer
 * note, each RUN command creates a new layer...
@@ -232,23 +241,79 @@ More::
 Using docker-machine
 --------------------
 
-First, set your AWS_KEY and AWS_SECRET and VPC_ID::
+Documentation: https://docs.docker.com/machine/; also see `Amazon Web
+Services driver docs <https://docs.docker.com/machine/aws/>`__
+
+Here, we're going to use Amazon to host and run our Docker images, while
+controlling it from our local machine.
+
+Start by logging into the `AWS EC2 console <https://console.aws.amazon.com/ec2/v2/home>`__.
+
+Find your AWS credentials and your VPC ID.
+
+* your AWS credentials are `here <https://console.aws.amazon.com/iam/home?region=us-east-1#security_credential>`__, and if you haven't used them before you
+  may need to "Create a New Access Key".  (Be sure not to store these in a place
+  that other people can view them.)
+
+  Your AWS
+
+* to get your VPC ID, go into https://console.aws.amazon.com/vpc/home and
+  select "Your VPCs".  Your VPC ID should look something like vpc-9efe1afa
+  (that's mine and won't work for you ;)
+
+Then, set your AWS_KEY and AWS_SECRET and VPC_ID; on Linux/Mac, fill in
+the values and execute:
 
   export AWS_KEY=
   export AWS_SECRET=
   export VPC_ID=
 
+...not sure what to do on Windows, maybe build the command below in a text
+editor?
+
 Then, run::
   
   docker-machine create --driver amazonec2 --amazonec2-access-key ${AWS_KEY} \
-        --amazonec2-secret-key ${AWS_SECRET} --amazonec2-vpc-id ${VPC_ID}
-        --amazonec2-zone b --amazonec2-instance-type m3.xlarge
+        --amazonec2-secret-key ${AWS_SECRET} --amazonec2-vpc-id ${VPC_ID} \
+        --amazonec2-zone b --amazonec2-instance-type m3.xlarge \
         aws
 
-* explain docker client, docker host, docker container relationship
-* also include -p, -v discussion
+and to connect to it, do::
 
-Now, let's talk more about why you would want to do *this* :)
+  eval $(docker-machine env aws)
+
+and now you can run all the 'docker' commands as you would expect, EXCEPT
+that your docker host is now running Somewhere Else.
+
+Things to discuss:
+
+* diagram out what we're doing!
+* docker-machine manages your docker host; docker manages your
+   containers/images ON that host.
+* talk about AWS host sizes/instance types: https://aws.amazon.com/ec2/instance-types/
+* explain docker client, docker host, docker container relationship
+* also include -p, -v discussion.
+
+---
+
+You can use 'docker-machine stop aws' and 'docker-machine start aws' to
+stop and start this machine; with AWS, you will need to do a
+'docker-machine regenerate-certs aws' after starting it in order to
+connect to it with docker-machine env.
+
+To kill the machine, do 'docker-machine kill aws'.  This will also, I believe,
+trash the configuration settings so you would need to reconfigure it
+with a 'create'.
+
+Note that while the machine is running or stopped, you should be able
+to see it at the `AWS EC2 console
+<https://console.aws.amazon.com/ec2/v2/home>`__.
+
+----
+
+Let's talk more about why you would want to do *this* :).
+
+Also, diagrams!
 
 -----
 
@@ -284,6 +349,7 @@ Thoughts on containerization, scientific workflows, etc
 - what about putting data, scripts on persistent volume and using Docker
   containers for the base software?
 - standardization and packaging... bioboxes!
-- binding resources (?)
+- the long-term idea of binding data resources to Docker containers and/or
+  specify workflows with a directed acyclic graph...
 
 .. bioboxes presentation?
