@@ -24,6 +24,11 @@ Note: I'm not a Docker expert by any means.
 Caveat: this is the first time I'm teaching a lot of this; please be
 gentle!
 
+Starting level.
+
+Other instructors: I will be joined by Carl Boettiger (today) and
+Luiz Irber (tomorrow).
+
 We have a `code of conduct! <http://software-carpentry.org/conduct/>`__
 Basically, please be respectful of each other.
 
