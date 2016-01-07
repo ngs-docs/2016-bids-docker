@@ -1,7 +1,7 @@
 Docker @ BIDS - Day 1 notes
 ===========================
 
-Please see `the README <README.rst>`__ for background information.
+Please see `the README <README.md>`__ for background information.
 
 Contact: titus@idyll.org
 
