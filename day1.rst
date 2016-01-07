@@ -14,7 +14,7 @@ We'll put ephemera from today in this etherpad:
 Introductory stuff
 ------------------
 
-Who am I?
+Who am I? Currently, background, interests...
 
 My meta-goals for this workshop: hands-on exposure, with lots of rooms
 for questions. Please ask questions.
@@ -25,11 +25,15 @@ Caveat: this is the first time I'm teaching a lot of this; please be
 gentle!
 
 We have a `code of conduct! <http://software-carpentry.org/conduct/>`__
-Please be respectful of each other.
+Basically, please be respectful of each other.
 
-All of this material will be open (CC0). Use it as you wish.
+All of this material will be open (CC0). Use it as you wish!
 
 Pretty please, ask questions!
+
+Notes on sticky notes.
+
+Bathrooms!
 
 A few likely challenges:
 
@@ -56,6 +60,8 @@ If that works, you might try::
    docker pull ubuntu:14.04
    docker pull jupyter/notebook
    docker pull rocker/hadleyverse
+
+to get some of the stuff downloaded a bit early.
 
 Getting started
 ---------------

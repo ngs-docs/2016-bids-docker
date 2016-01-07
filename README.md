@@ -56,3 +56,7 @@ is:
     510-664-4506
     aferguson@berkeley.edu
     http://bids.berkeley.edu
+
+### Workshop materials
+
+The notes for the first day [are available here](day1.rst).
