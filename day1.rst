@@ -92,7 +92,7 @@ Points to cover:
 
 Try creating a file in your container; first run::
 
-   docker run ubuntu:14.04 -it /bin/bash
+   docker run -it ubuntu:14.04 /bin/bash
 
 and then *inside the docker container* run::
 
