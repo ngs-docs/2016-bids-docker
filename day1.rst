@@ -79,7 +79,7 @@ Try::
 
 Now try::
 
-   docker run ubuntu:14.04 -it /bin/bash
+   docker run -it ubuntu:14.04 /bin/bash
 
 Q: What does the '-it' do?
 
