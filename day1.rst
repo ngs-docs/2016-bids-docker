@@ -305,6 +305,15 @@ and to connect to it, do::
 and now you can run all the 'docker' commands as you would expect, EXCEPT
 that your docker host is now running Somewhere Else.
 
+If you have trouble getting a subnet, make sure that your VPC has subnets
+in the zone/region you're trying to use. You can set these with::
+
+    --amazonec2-region "us-east-1" --amazonec2-zone b
+
+Take a look at the help for the EC2 driver here::
+
+  docker-machine create --driver amazonec2 -h | less
+
 Things to discuss:
 
 * diagram out what we're doing!
