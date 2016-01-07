@@ -50,6 +50,8 @@ A few likely challenges:
 
 Before Getting Started
 ----------------------
+
+Did everyone get an e-mail from me this morning?
  
 Can you run this? ::
 
