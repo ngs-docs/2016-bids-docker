@@ -17,29 +17,29 @@ attendees have some familiarity with the UNIX command line.
 
 ## Schedule
 
+`day 1 notes <day1.rst>`__
+
+`day 2 notes <day2.rst>`__
+
 Thursday morning:
 
 * Hands-on introduction to Docker: what it does, how it works, running & working with docker.
+* Working with docker for research and teaching (Carl Boettiger)
 
 Thursday afternoon:
 
 * docker-machine and docker running on Amazon, Digital Ocean, etc;
 * Dockerfiles and building docker images;
-* working with the Docker hub;
-
-* Containerization and scientific workflows: bioboxes etc.
+* data volumes.
 
 Friday morning:
 
-* working with docker for research and teaching
-* Jupyter in docker
-* R in docker
-* challenge exercises
+* http://mybinder.org
+* docker-compose, docker-swarm, and http://getcarina.com
 
 Friday afternoon:
 
-* docker-compose
-* mybinder and other cool things
+* `setting up a data-intensive workflow on docker-machine - hands-on <docker-machine-workflow.rst>`__
 
 ## Some reading:
 
