@@ -59,4 +59,8 @@ is:
 
 ### Workshop materials
 
+The overall [agenda is here](AGENDA.md).
+
 The notes for the first day [are available here](day1.rst).
+
+The notes for the second day [are available here](day1.rst).
