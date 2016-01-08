@@ -44,7 +44,8 @@ Example: Compose and Django
 
 https://docs.docker.com/compose/django/
 
-::
+Let's create a directory for this example ::
+
   mkdir -p example
   cd example
 
