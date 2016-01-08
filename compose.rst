@@ -44,13 +44,16 @@ Extending the docker infrastructure
 ===================================
 
 - Machine (deploy basic infrastructure)
+
   * Single machine deploy (install Docker on an EC2 instance)
 
 - Swarm (cluster management)
+
   * Connect a pool of Docker hosts into a single, virtual Docker host.
   * Expose the Docker API, so tools compatible with a Docker daemon also work with Swarm.
 
 - Compose (Application deployment)
+
   * Application deployment
   * Service description and relationships
 
@@ -62,7 +65,6 @@ Other toolchains
 
   * Kubernetes
   * CoreOS (etcd, fleet, ...)
-
 
 Useful for science?
 ===================
