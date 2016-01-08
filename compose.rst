@@ -36,8 +36,8 @@ Example: Compose and Django
 
 https://docs.docker.com/compose/django/
 
-* configurations to cover: build, ports, links, image
-https://docs.docker.com/compose/compose-file/
+* configurations to cover: build, ports, links, image: https://docs.docker.com/compose/compose-file/
+* upcoming changes with compose 1.6
 
 
 Extending the docker infrastructure
@@ -57,7 +57,6 @@ Extending the docker infrastructure
   * Application deployment
   * Service description and relationships
 
-* talk about how this development is iterative (and how sometimes things don't work that well)
 * diagram everything!
 
 Other toolchains
@@ -65,6 +64,18 @@ Other toolchains
 
   * Kubernetes
   * CoreOS (etcd, fleet, ...)
+
+Carina
+======
+
+- Rackspace service based on Docker Swarm
+- Currently in Beta (no charges!)
+  * But limited to 3 instances
+- Simple interface for cluster creation
+
+https://getcarina.com/docs/getting-started/getting-started-carina-cli/
+
+* talk about how Docker development is iterative (and how sometimes things don't work that well...)
 
 Useful for science?
 ===================
