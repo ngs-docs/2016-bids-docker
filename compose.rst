@@ -1,5 +1,5 @@
-Docker @ BIDS - Day 2 notes
-===========================
+Building up on Docker: Compose, Swarm and Carina
+================================================
 
 Please see `the README <README.md>`__ for background information.
 
