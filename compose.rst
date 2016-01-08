@@ -136,8 +136,11 @@ Carina
 ======
 
 - Rackspace service based on Docker Swarm
+
 - Currently in Beta (no charges!)
+
   * But limited to 3 instances
+
 - Simple interface for cluster creation
 
 https://getcarina.com/docs/getting-started/getting-started-carina-cli/
