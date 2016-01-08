@@ -54,8 +54,13 @@ can include data!
 Also see 'everware', which I haven't had time to try:
 
    https://github.com/everware
-  
+
 -----
+
+Compose, Swarm, and Carina
+--------------------------------------
+
+`Building up on Docker: Compose, Swarm and Carina <compose.rst>`__
 
 Hands-on data intensive workflow stuff
 --------------------------------------
