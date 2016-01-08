@@ -17,9 +17,9 @@ attendees have some familiarity with the UNIX command line.
 
 ## Schedule
 
-`day 1 notes <day1.rst>`__
+[day 1 notes](day1.rst)
 
-`day 2 notes <day2.rst>`__
+[day 2 notes](day2.rst)
 
 Thursday morning:
 
@@ -39,7 +39,7 @@ Friday morning:
 
 Friday afternoon:
 
-* `setting up a data-intensive workflow on docker-machine - hands-on <docker-machine-workflow.rst>`__
+* [setting up a data-intensive workflow on docker-machine - hands-on](docker-machine-workflow.rst)
 
 ## Some reading:
 
