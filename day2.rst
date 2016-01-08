@@ -48,6 +48,12 @@ can include data!
 
    You can give it a try by entering the above URL into the mybinder.org site,
    and specifying 'Dockerfile' under 'Configure dependencies'.
+
+----
+
+Also see 'everware', which I haven't had time to try:
+
+   https://github.com/everware
   
 -----
 
