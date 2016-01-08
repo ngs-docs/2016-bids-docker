@@ -78,14 +78,15 @@ and then populate it with data::
 
   docker run --rm --volumes-from my_data_vol -it megahit_ctr /bin/bash
 
-Inside the docker container, run
+Inside the docker container, run::
 
   apt-get install wget
   cd /mydata
   wget http://public.ged.msu.edu.s3.amazonaws.com/ecoli_ref-5m-trim.pe.fq.gz
   wget http://public.ged.msu.edu.s3.amazonaws.com/ecoli_ref-5m-trim.se.fq.gz
 
-This downloads those two data files onto your /mydata directory, which
+This downloads those two data files onto your /mydata directory inside
+the Docker container, which
 is (equivalently) 'my_data_vol'.
 
 Also in the docker container, let's run::
