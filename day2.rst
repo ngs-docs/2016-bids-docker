@@ -51,6 +51,10 @@ can include data!
 
 ----
 
+The base image for mybinder is here:
+
+   https://github.com/binder-project/binder/blob/master/images/base/Dockerfile
+
 Also see 'everware', which I haven't had time to try:
 
    https://github.com/everware
